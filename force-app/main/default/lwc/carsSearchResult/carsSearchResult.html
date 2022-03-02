@@ -1,0 +1,17 @@
+<template>
+    <lightning-layout multiple-rows>
+       <template if:true={cars}>
+        <template  for:each={cars} for:item="car">
+        <lightning-layout-item size="12" key={car.Id} padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="3" >
+         
+            <a href="http://" onclick= {handleSelect}  >
+                        
+                <img src={car.Picture__c} alt="car pic" class="slds-align_absolute-center">
+             
+            </a>
+    
+        </lightning-layout-item>
+            </template>
+       </template>
+    </lightning-layout>
+</template>

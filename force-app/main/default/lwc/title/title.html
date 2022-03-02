@@ -1,0 +1,64 @@
+<template>
+
+    <lightning-card title="List Of Files">
+        <template if:true={datapresent}>
+            <div class="slds-grid ">
+                <div class="slds-col slds-size_1-of-4">
+                    <div
+                        class="slds-text-heading_small slds-align_absolute-center slds-box slds-theme_shade slds-m-left_medium">
+                        Document Image</div>
+                </div>
+
+                <div class="slds-col slds-size_3-of-4">
+                    <div
+                        class="slds-text-heading_small slds-align_absolute-center slds-box slds-theme_shade slds-m-left_medium">
+                        Document Details</div >
+                </div>
+            </div>
+            <template if:true={docs} for:each={docs} for:item="doc">
+                <div key={doc.Id}>
+                    <div class="slds-grid ">
+                        <div class="slds-col slds-size_1-of-4 slds-p-around_medium slds-border_bottom">
+
+                            <div class=" image slds-text-heading_small slds-align_absolute-center  slds-m-left_medium">
+                                <img src={doc.imgsource} />
+                            </div>
+
+
+                        </div>
+                        <div class="slds-col slds-size_3-of-4 slds-p-around_medium slds-border_bottom">
+
+                            <!-- <img src={doc.imgsource} /> -->
+                            <div class="slds-text-heading_small  slds-var-m-left_medium ">
+                                <dl class="slds-dl_horizontal">
+                                    <template if:true={doc.Title}>
+                                        <dt class="slds-dl_horizontal__label slds-var-m-bottom_medium">Title:</dt>
+                                        <dd
+                                            class=" title slds-dl_horizontal__detail slds-var-m-bottom_medium slds-text-title_bold">
+                                            {doc.Title}</dd>
+                                    </template>
+                                    <template if:true={doc.Description}>
+                                        <dt class="slds-dl_horizontal__label slds-var-m-bottom_medium">Description:
+                                        </dt>
+                                        <dd
+                                            class=" desc slds-dl_horizontal__detail slds-var-m-bottom_medium slds-text-title_bold">
+                                            {doc.Description}</dd>
+                                    </template>
+                                </dl>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </template>
+
+        </template>
+        <template if:false={datapresent}>
+            <p>No files found</p>
+        </template>
+    </lightning-card>
+
+</template>

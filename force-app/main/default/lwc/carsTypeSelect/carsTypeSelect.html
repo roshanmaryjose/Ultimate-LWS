@@ -1,0 +1,20 @@
+<template>
+    <lightning-card variant="Narrow" title="Select Car type" icon-name="utility:cart">
+        <lightning-layout multiple-rows horizontal-align="center">
+            <lightning-layout-item size="12" padding="around-small" small-device-size="3" medium-device-size="6"
+                large-device-size="3">
+                <lightning-combobox name="CarType" label="Choose type" value={value} placeholder="Select an option"
+                    options={options} onchange={handleChange}></lightning-combobox>
+            </lightning-layout-item>
+        </lightning-layout>
+        <lightning-layout multiple-rows horizontal-align="center">
+            <lightning-layout-item size="12" padding="around-small" small-device-size="3" medium-device-size="6"
+                large-device-size="3">
+                <lightning-button class="slds-m-around_medium" variant="brand" label="Create New Car type" title="Primary action"
+                    onclick={handleClick} ></lightning-button>
+            </lightning-layout-item>
+        </lightning-layout>
+
+
+    </lightning-card>
+</template>

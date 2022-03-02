@@ -1,0 +1,368 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef1"
+            },
+            "CaseNumber": "00001000",
+            "Account": {
+                "attributes": {
+                    "type": "Account",
+                    "url": "/services/data/v50.0/sobjects/Account/0011D000014r4SWQAY"
+                },
+                "AccountNumber": "CD451796"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef2"
+            },
+            "CaseNumber": "00001001",
+            "Account": {
+                "attributes": {
+                    "type": "Account",
+                    "url": "/services/data/v50.0/sobjects/Account/0011D000014r4SbQAI"
+                },
+                "AccountNumber": "CD355118"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef3"
+            },
+            "CaseNumber": "00001002",
+            "Account": {
+                "attributes": {
+                    "type": "Account",
+                    "url": "/services/data/v50.0/sobjects/Account/0011D000014r4SbQAI"
+                },
+                "AccountNumber": "CD355118"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef4"
+            },
+            "CaseNumber": "00001003",
+            "Account": {
+                "attributes": {
+                    "type": "Account",
+                    "url": "/services/data/v50.0/sobjects/Account/0011D000014r4ScQAI"
+                },
+                "AccountNumber": "CC947211"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef5"
+            },
+            "CaseNumber": "00001004",
+            "Account": {
+                "attributes": {
+                    "type": "Account",
+                    "url": "/services/data/v50.0/sobjects/Account/0011D000014r4ScQAI"
+                },
+                "AccountNumber": "CC947211"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef6"
+            },
+            "CaseNumber": "00001005",
+            "Account": {
+                "attributes": {
+                    "type": "Account",
+                    "url": "/services/data/v50.0/sobjects/Account/0011D000014r4ScQAI"
+                },
+                "AccountNumber": "CC947211"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef7"
+            },
+            "CaseNumber": "00001006",
+            "Account": {
+                "attributes": {
+                    "type": "Account",
+                    "url": "/services/data/v50.0/sobjects/Account/0011D000014r4SgQAI"
+                },
+                "AccountNumber": "CC978213"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef8"
+            },
+            "CaseNumber": "00001007",
+            "Account": {
+                "attributes": {
+                    "type": "Account",
+                    "url": "/services/data/v50.0/sobjects/Account/0011D000014r4SaQAI"
+                },
+                "AccountNumber": "CD439877"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef9"
+            },
+            "CaseNumber": "00001008",
+            "Account": {
+                "attributes": {
+                    "type": "Account",
+                    "url": "/services/data/v50.0/sobjects/Account/0011D000014r4SaQAI"
+                },
+                "AccountNumber": "CD439877"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef10"
+            },
+            "CaseNumber": "00001009",
+            "Account": {
+                "attributes": {
+                    "type": "Account",
+                    "url": "/services/data/v50.0/sobjects/Account/0011D000014r4SeQAI"
+                },
+                "AccountNumber": "CD355119-A"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef11"
+            },
+            "CaseNumber": "00001010",
+            "Account": {
+                "attributes": {
+                    "type": "Account",
+                    "url": "/services/data/v50.0/sobjects/Account/0011D000014r4SfQAI"
+                },
+                "AccountNumber": "CD355120-B"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef12"
+            },
+            "CaseNumber": "00001011",
+            "Account": {
+                "attributes": {
+                    "type": "Account",
+                    "url": "/services/data/v50.0/sobjects/Account/0011D000014r4SfQAI"
+                },
+                "AccountNumber": "CD355120-B"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef13"
+            },
+            "CaseNumber": "00001012",
+            "Account": {
+                "attributes": {
+                    "type": "Account",
+                    "url": "/services/data/v50.0/sobjects/Account/0011D000014r4SdQAI"
+                },
+                "AccountNumber": "CD736025"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef14"
+            },
+            "CaseNumber": "00001013",
+            "Account": {
+                "attributes": {
+                    "type": "Account",
+                    "url": "/services/data/v50.0/sobjects/Account/0011D000014r4SaQAI"
+                },
+                "AccountNumber": "CD439877"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef15"
+            },
+            "CaseNumber": "00001014",
+            "Account": {
+                "attributes": {
+                    "type": "Account",
+                    "url": "/services/data/v50.0/sobjects/Account/0011D000014r4SaQAI"
+                },
+                "AccountNumber": "CD439877"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef16"
+            },
+            "CaseNumber": "00001015",
+            "Account": {
+                "attributes": {
+                    "type": "Account",
+                    "url": "/services/data/v50.0/sobjects/Account/0011D000014r4SfQAI"
+                },
+                "AccountNumber": "CD355120-B"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef17"
+            },
+            "CaseNumber": "00001016",
+            "Account": {
+                "attributes": {
+                    "type": "Account",
+                    "url": "/services/data/v50.0/sobjects/Account/0011D000014r4SgQAI"
+                },
+                "AccountNumber": "CC978213"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef18"
+            },
+            "CaseNumber": "00001017",
+            "Account": {
+                "attributes": {
+                    "type": "Account",
+                    "url": "/services/data/v50.0/sobjects/Account/0011D000014r4SWQAY"
+                },
+                "AccountNumber": "CD451796"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef19"
+            },
+            "CaseNumber": "00001018",
+            "Account": {
+                "attributes": {
+                    "type": "Account",
+                    "url": "/services/data/v50.0/sobjects/Account/0011D000014r4SWQAY"
+                },
+                "AccountNumber": "CD451796"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef20"
+            },
+            "CaseNumber": "00001019",
+            "Account": {
+                "attributes": {
+                    "type": "Account",
+                    "url": "/services/data/v50.0/sobjects/Account/0011D000014r4SXQAY"
+                },
+                "AccountNumber": "CD656092"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef21"
+            },
+            "CaseNumber": "00001020",
+            "Account": {
+                "attributes": {
+                    "type": "Account",
+                    "url": "/services/data/v50.0/sobjects/Account/0011D000014r4SXQAY"
+                },
+                "AccountNumber": "CD656092"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef22"
+            },
+            "CaseNumber": "00001021",
+            "Account": {
+                "attributes": {
+                    "type": "Account",
+                    "url": "/services/data/v50.0/sobjects/Account/0011D000014r4SbQAI"
+                },
+                "AccountNumber": "CD355118"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef23"
+            },
+            "CaseNumber": "00001022",
+            "Account": {
+                "attributes": {
+                    "type": "Account",
+                    "url": "/services/data/v50.0/sobjects/Account/0011D000014r4SbQAI"
+                },
+                "AccountNumber": "CD355118"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef24"
+            },
+            "CaseNumber": "00001023",
+            "Account": {
+                "attributes": {
+                    "type": "Account",
+                    "url": "/services/data/v50.0/sobjects/Account/0011D000014r4SbQAI"
+                },
+                "AccountNumber": "CD355118"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef25"
+            },
+            "CaseNumber": "00001024",
+            "Account": {
+                "attributes": {
+                    "type": "Account",
+                    "url": "/services/data/v50.0/sobjects/Account/0011D000014r4SbQAI"
+                },
+                "AccountNumber": "CD355118"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef26"
+            },
+            "CaseNumber": "00001025",
+            "Account": {
+                "attributes": {
+                    "type": "Account",
+                    "url": "/services/data/v50.0/sobjects/Account/0011D000014r4SbQAI"
+                },
+                "AccountNumber": "CD355118"
+            }
+        }
+    ]
+}

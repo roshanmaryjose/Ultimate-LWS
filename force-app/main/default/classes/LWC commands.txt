@@ -1,0 +1,198 @@
+Command + Shift P open palette
+
+
+create a lwc proj									cd path/to/your/sfdx/projects
+												sfdx force:project:create --projectname MyLWC
+												cd MyLWC
+
+For installing linting								npm install If you have issues, verify that the project’s package.json file matches the salesforcedx-templates package.json file.
+
+lint config file									force-app/main/default/lwc/.eslintrc.json  if you dont have one copy from salesforce dx templates online
+
+
+lint ignore file									.eslintignore file at the root level
+
+run linting 										npm run lint
+
+
+Scratch org
+=======================
+authorize dev hub  									sfdx force:auth:web:login -d -a LWC-Hub
+
+scratch org										sfdx force:org:create -s -f config/project-scratch-def.json -a "LWC"
+
+create lightning web  component						sfdx force:lightning:component:create --type lwc -n myComponent -d force-app/main/default/lwc
+
+push source to default scratch org						sfdx force:source:push
+
+pull source from scratch org							sfdx force:source:pull
+
+open default scratch org 							sfdx force:org:open
+
+
+convert source to metadata                              		sfdx force:source:convert  //from inside the package folder in terminal..it creates package.xml inside 
+											all the data related to an object will be objectfile, inscratch org proejct structure all data related to an object are in seperate xml files
+
+											sfdx force:source:convert -d <foldernname>  //creates metadata with foldername
+
+
+Deploy to a production or deploy the metadata using metadata api..					authorize to org	 sfdx force:auth:web:login -r https://login.salesforce.com -a <aliasname for org>
+											sfdx force:mdapi:deploy -d <foldername> -u <username of sandbox or org>
+											check status in org by going to deployment status in setup		or sfdx force:mdapi:deploy:report
+
+ connect to  a previously connected org USING USERNAME alias                       	force:org:list  //lists all connected org find the alias you want to connect to
+											sfdx force:config:set defaultusername=<alias>
+											sfdx force:org:open
+
+
+
+Non scratch org
+========================
+
+
+deploy source to an org								sfdx force:source:deploy -p <pathToDeploy> -u <orgUserName>
+
+											sfdx force:source:deploy -p force-app/main/default
+
+	
+												This example deploys the root directory of a Salesforce DX project to an org with the username example@force.com.
+	
+												sfdx force:source:deploy -p force-app -u example@force.com
+
+
+Retrieve source from org								sfdx force:source:retrieve -p <pathToRetrieve> -u <orgUserName>
+
+
+Jest test
+===================
+
+
+Test normal 									npm run test:unit or  node ./node_modules\@salesforce\sfdx-lwc-jest\bin\sfdx-lwc-jest 
+		
+test watch mode 									npm run test:unit:watch  (drag the folder you want to watch)
+
+
+
+
+--targetusername            = -u (To specify a non-default scratch org)
+--targetdevhubusername      = -v (To specify a non-default Dev Hub org)
+
+--setdefaultdevhubusername  = -d
+--setdefaultusername        = -s
+
+--instanceurl               = -r
+--setalias                  = -a
+
+
+IMPORTANT: 
+1. You can use force:source:pull for scratch orgs only. If you’re synchronizing source to any other org, use the Metadata 
+API (force:mdapi:retrieve or force:mdapi:deploy).
+2. The force:source:deploy, force:source:retrieve, and force:source:delete commands work on sandboxes, Developer Edition orgs, 
+and trial orgs, but not production orgs. For production orgs, continue to use force:mdapi:deploy and force:mdapi:retrieve.
+----------------------------------------------------------------------------------------
+
+HELP
+sfdx force:org:create --help
+sfdx force:doc:commands:list
+
+CREATE PROJECT
+sfdx force:project:create --projectname mywork
+sfdx force:project:create --projectname myproject --manifest
+
+LOGIN
+sfdx force:auth:web:login --setdefaultdevhubusername
+sfdx force:auth:web:login --setdefaultdevhubusername --setalias DevHub
+sfdx force:auth:web:login --setalias sandbox1 --instanceurl https://test.salesforce.com
+
+LOGOUT
+sfdx force:auth:logout -u sonal.psa@gscloudsolutions.com
+sfdx force:auth:logout -a --noprompt                  (Log out all connected orgs)
+
+
+
+CREATE DEFAULT SCRATCH ORG
+sfdx force:org:create -f config/project-scratch-def.json --setalias sonalpsadevscratch --durationdays 30 --setdefaultusername
+
+GET/SET local values for the project directory
+sfdx force:config:list
+sfdx force:config:get defaultusername defaultdevhubusername --json
+sfdx force:config:set name=<value>
+sfdx force:config:set instanceUrl=
+sfdx force:config:set defaultusername=test-wvkpnfm5z113@example.com				(---> Set default username)
+sfdx force:config:set defaultdevhubusername=jdoe@mydevhub.com					(---> Set default Dev Hub org)
+
+SET ALIAS
+sfdx force:alias:set my-scratch-org=test-wvkpnfm5z113@example.com
+
+
+OPEN DEFAULT ORG
+sfdx force:org:open
+sfdx force:org:open -u <username/alias>
+
+DISPLAY ALL ORGS
+sfdx force:org:list
+sfdx force:org:list --clean				(To remove non-active scratch orgs from the list)
+
+
+DELETE SCRATCH ORG
+sfdx force:org:delete -u tempTest
+
+
+
+PUSH CODE To SCRATCH ORG
+sfdx force:source:status
+sfdx force:source:push
+sfdx force:source:push --targetusername my-other-scratch-org
+sfdx force:source:push --forceoverwrite
+
+PULL CODE From SCRATCH ORG
+sfdx force:source:status
+sfdx force:source:pull
+sfdx force:source:pull --forceoverwrite
+
+
+VIEW LOCAL CHANGES
+sfdx force:source:status --local
+
+
+
+
+
+
+DEPLOY SINGLE FILE
+sfdx force:source:deploy --loglevel fatal --sourcepath /Users/sonal/gsinternal-sfdx/force-app/main/default/classes/PSADataCreate.cls
+sfdx force:source:deploy -p force-app/main/default/aura
+sfdx force:source:deploy -p force-app -u example@force.com
+
+RETRIEVE FILES
+sfdx force:source:retrieve -p /Users/sonal/WebstormProjects/cg_salesforce/force-app/main/default/objects/CampaignMember/fields
+sfdx force:source:retrieve -m ApexClass
+sfdx force:source:retrieve -x path/to/package.xml
+
+
+
+PACKAGE.XML
+Create package.xml and save it in root directory.
+Create folder mdapipkg in root directory.
+sfdx force:mdapi:retrieve -r ./mdapipkg -u sonal.psadev@gscloudsolutions.com -k ./package.xml
+unzip mdapipkg/unpackaged.zip -d mdapipkg
+Extract the zip file (mdapipkg/unpackaged/...)
+sfdx force:mdapi:convert --rootdir mdapipkg
+
+To deploy code in sandbox: 
+sfdx force:source:convert -d mdapi_output_dir --packagename [package name here]
+
+sfdx force:mdapi:deploy --deploydir mdapi_output_dir --targetusername me@example.com
+sfdx force:mdapi:deploy -w 1 -f mdZip/metadata.zip -u ${targetusernameOrAlias}
+
+
+
+
+REFERENCES:
+https://medium.com/@djrzo4/salesforcedx-123cc383a27e
+
+
+sfdx force:source:retrieve -m PermissionSet
+
+
+
